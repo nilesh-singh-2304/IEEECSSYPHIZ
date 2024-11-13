@@ -37,24 +37,36 @@ export default function Home() {
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-auto p-2 shadow">
         <li><a>Home</a></li>
         <li>
-          <a>About</a>
+        <details>
+          <summary className="text-black">About</summary>
           <ul className="p-2">
             <li><a href="http://ieee.org/about">IEEE</a></li>
             <li><a href="https://www.computer.org/about"> IEEE Computer Society</a></li>
             <li><a href="https://www.computer.org/volunteering/boards-and-committees/member-geographic-activities">IEEE CS MGAP</a></li>
             <li><a href="https://www.computer.org/volunteering/boards-and-committees/syp">IEEE CSS SYP</a></li>
           </ul>
-        </li>
+        </details>
+      </li>
         <li>
-          <a>Membership</a>
+        <details>
+          <summary className="text-black">Membership</summary>
           <ul className="p-2">
             <li><a href="https://www.computer.org/membership">Discover Membership</a></li>
             <li><a href="https://www.computer.org/membership/categories">Membership Conclusion</a></li>
             <li><a href="https://www.computer.org/membership/faq">Membership FAQ</a></li>
-            <li><a href="https://syp.computer.org/">Initiative</a></li>
-            <li><a href="https://www.computer.org/publications/tech-news/events/syp-volunteers">Get Involved</a></li>
+            
           </ul>
-        </li>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary className="text-black">Initiative</summary>
+          <ul className="p-2">
+            <li><a href="https://syp.computer.org/">Initiative</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="https://www.computer.org/publications/tech-news/events/syp-volunteers">Get Involved</a></li>
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">
