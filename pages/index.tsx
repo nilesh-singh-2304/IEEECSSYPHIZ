@@ -4,6 +4,7 @@ import Autoplay from 'embla-carousel-autoplay'
 
 export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
+  const [emblaRef1] = useEmblaCarousel({ loop: true }, [Autoplay()])
   return (
     <div>
       <section>
@@ -82,7 +83,7 @@ export default function Home() {
       </li>
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end hidden sm:flex">
     <a className="btn">Register Now</a>
   </div>
 </div>
@@ -112,7 +113,7 @@ export default function Home() {
           </div>
           <div className="max-h-72">
             {/* <img src="https://readymadeui.com/management-img.webp" alt="Placeholder Image" className="rounded-lg object-contain w-full h-full" /> */}
-            <div className="embla" ref={emblaRef}>
+            <div className="embla" ref={emblaRef1}>
                 <div className="embla__container">
                   <div className="embla__slide">
                     <img src="https://www.imgtr.net/ib/ZvBYVQ3wTm6fwcG_1731523565.jpg" alt="" />
