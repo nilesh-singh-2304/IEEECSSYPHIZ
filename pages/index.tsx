@@ -1,6 +1,7 @@
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
+import { IoMenu } from "react-icons/io5";
 
 export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
@@ -17,9 +18,9 @@ export default function Home() {
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="h-5 w-5 bg-red-500"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor">
@@ -28,7 +29,8 @@ export default function Home() {
             strokeLinejoin="round"
             strokeWidth="2"
             d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
+        </svg> */}
+        <IoMenu className='text-white size-14'/>
       </div>
       <ul
         tabIndex={0}
