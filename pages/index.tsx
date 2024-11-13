@@ -39,15 +39,20 @@ export default function Home() {
         <li>
           <a>About</a>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li><a href="http://ieee.org/about">IEEE</a></li>
+            <li><a href="https://www.computer.org/about"> IEEE Computer Society</a></li>
+            <li><a href="https://www.computer.org/volunteering/boards-and-committees/member-geographic-activities">IEEE CS MGAP</a></li>
+            <li><a href="https://www.computer.org/volunteering/boards-and-committees/syp">IEEE CSS SYP</a></li>
           </ul>
         </li>
         <li>
           <a>Membership</a>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li><a href="https://www.computer.org/membership">Discover Membership</a></li>
+            <li><a href="https://www.computer.org/membership/categories">Membership Conclusion</a></li>
+            <li><a href="https://www.computer.org/membership/faq">Membership FAQ</a></li>
+            <li><a href="https://syp.computer.org/">Initiative</a></li>
+            <li><a href="https://www.computer.org/publications/tech-news/events/syp-volunteers">Get Involved</a></li>
           </ul>
         </li>
       </ul>
