@@ -9,9 +9,8 @@ export default function Home() {
     <div>
       <section>
       <header className='shadow-md font-sans tracking-wide relative z-50'>
-    <section className='py-2 bg-orange-400 text-white text-right px-10'>
-      <p className='text-sm'><strong className="mx-3">Address:</strong>SWF New York 185669<strong className="mx-3">Contact
-          No:</strong>1800333665</p>
+    <section className='py-2 bg-orange-400 text-white text-right px-10 w-full'>
+      <p className='text-center'><strong>IEEE CSSYP HIGH IMPACT ZONAL GRAND FINALE</strong></p>
     </section>
   
     <div className="navbar bg-gray-800">
@@ -100,7 +99,7 @@ export default function Home() {
     </div>
       </section>
 {/* About IEEE CS SYP */}
-      <section>
+      <section className='my-16'>
       <div className="font-sans bg-white p-4">
       <div className="md:max-w-5xl max-w-xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
@@ -161,7 +160,7 @@ export default function Home() {
 </section>
       </section> */}
 {/* About HIZ Events */}
-      <section>
+      <section className='my-14'>
       <div className="font-sans bg-gray-100 px-4 py-12">
       <div className="grid lg:grid-cols-2 gap-12 lg:max-w-6xl max-w-2xl mx-auto">
         <div>
@@ -521,7 +520,7 @@ export default function Home() {
                 </ul>
             </div>
             <div className="z-10 relative h-full max-md:min-h-[350px]">
-                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224328.3502894993!2d77.14718700429688!3d28.535797772413684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1731526866966!5m2!1sen!2sin"
                     className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
                     ></iframe>
             </div>
