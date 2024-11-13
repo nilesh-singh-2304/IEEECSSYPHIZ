@@ -1,5 +1,9 @@
+import React from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
 export default function Home() {
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
   return (
     <div>
       <section>
@@ -94,7 +98,7 @@ export default function Home() {
       </div>
     </div>
       </section>
-
+{/* About IEEE CS SYP */}
       <section>
       <div className="font-sans bg-white p-4">
       <div className="md:max-w-5xl max-w-xl mx-auto">
@@ -104,16 +108,30 @@ export default function Home() {
             <p className="text-black">
             The IEEE Computer Society Student and Young Professionals (CSSYP) is dedicated to nurturing future innovators in the field of technology. With a global network of students, researchers, and professionals, IEEE CS SYP empowers young minds by providing mentorship, resources, and platforms like HIZ for skill-building and career growth. Our mission is to inspire, educate, and connect future technology leaders by promoting responsible innovation and collaboration across diverse fields such as AI, cybersecurity, IoT, and more.
             </p>
-            <button type="button" className="mt-6 px-5 py-2.5 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-blue-700 hover:bg-blue-800 active:bg-blue-700">Get started</button>
+            <button type="button" className="mt-6 px-5 py-2.5 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-orange-400 hover:bg-orange-500 active:bg-orange-450">Get started</button>
           </div>
           <div className="max-h-72">
-            <img src="https://readymadeui.com/management-img.webp" alt="Placeholder Image" className="rounded-lg object-contain w-full h-full" />
+            {/* <img src="https://readymadeui.com/management-img.webp" alt="Placeholder Image" className="rounded-lg object-contain w-full h-full" /> */}
+            <div className="embla" ref={emblaRef}>
+                <div className="embla__container">
+                  <div className="embla__slide">
+                    <img src="https://www.imgtr.net/ib/ZvBYVQ3wTm6fwcG_1731523565.jpg" alt="" />
+                  </div>
+                  <div className="embla__slide">
+                    <img src="https://www.imgtr.net/ib/qN9HzIruXPQWu9e_1731523817.jpg" alt="" />
+                  </div>
+                  <div className="embla__slide">
+                    <img src="https://www.imgtr.net/ib/e5jxHHsr5Pj21ua_1731524569.jpg" alt="" />
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
       </section>
 
+{/* Let this be like this */}
       {/* <section>
       <section className="bg-white dark:bg-gray-900">
     <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
@@ -141,19 +159,32 @@ export default function Home() {
     </div>
 </section>
       </section> */}
-
+{/* About HIZ Events */}
       <section>
       <div className="font-sans bg-gray-100 px-4 py-12">
       <div className="grid lg:grid-cols-2 gap-12 lg:max-w-6xl max-w-2xl mx-auto">
+        <div>
+        <div className="embla" ref={emblaRef}>
+              <div className="embla__container">
+                <div className="embla__slide">
+                  <img src="https://www.imgtr.net/ib/ZvBYVQ3wTm6fwcG_1731523565.jpg" alt="" />
+                </div>
+                <div className="embla__slide">
+                  <img src="https://www.imgtr.net/ib/qN9HzIruXPQWu9e_1731523817.jpg" alt="" />
+                </div>
+                <div className="embla__slide">
+                  <img src="https://www.imgtr.net/ib/e5jxHHsr5Pj21ua_1731524569.jpg" alt="" />
+                </div>
+              </div>
+          </div>
+        </div>
         <div className="text-left">
           <h2 className="text-gray-800 text-3xl font-bold mb-6">About HIZ Events</h2>
           <p className="text-black">
           The IEEE CSSYP High Impact Zonals (HIZ) Grand Finale is a premier event bringing together students, professionals, and industry experts for two impactful days of knowledge sharing, innovation, and networking. Hosted on January 8-9, 2025, the event celebrates the achievements of regional HIZ events held across the country, with an immersive program including conferences, workshops, hackathons, and cultural experiences. Attendees can expect exclusive insights from thought leaders in technology, unique networking opportunities, and a chance to showcase their ideas on a global stage. Join us to be part of a transformative experience that shapes the future of technology!
           </p>
         </div>
-        <div>
-          <img src="https://readymadeui.com/management-img.webp" alt="Placeholder Image" className="rounded-lg object-contain w-full h-full" />
-        </div>
+        
       </div>
     </div>
       </section>
@@ -422,7 +453,7 @@ export default function Home() {
 
       <section>
       <div
-            className="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-8 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-blue-400 before:h-full max-md:before:hidden">
+            className="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-8 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px]  before:h-full max-md:before:hidden">
             <div>
                 <h2 className="text-gray-800 text-3xl font-extrabold">Get In Touch</h2>
                 <p className="text-sm text-gray-500 mt-4 leading-relaxed">Have a specific inquiry or looking to explore new opportunities? Our
@@ -431,28 +462,28 @@ export default function Home() {
                 <form>
                     <div className="space-y-4 mt-8">
                         <input type="text" placeholder="Full Name"
-                            className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+                            className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-orange-600 outline-none" />
                         <input type="text" placeholder="Street"
-                            className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+                            className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-orange-600 outline-none" />
                         <div className="grid grid-cols-2 gap-6">
                             <input type="text" placeholder="City"
-                                className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+                                className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-orange-600 outline-none" />
 
                             <input type="text" placeholder="Postcode"
-                                className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+                                className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-orange-600 outline-none" />
                         </div>
                         <input type="number" placeholder="Phone No."
-                            className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+                            className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-orange-600 outline-none" />
 
                         <input type="email" placeholder="Email"
-                            className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+                            className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-orange-600 outline-none" />
 
                         <textarea placeholder="Write Message"
-                            className="px-2 pt-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"></textarea>
+                            className="px-2 pt-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-orange-600 outline-none"></textarea>
                     </div>
 
                     <button type="button"
-                        className="mt-8 flex items-center justify-center text-sm w-full rounded-md px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white">
+                        className="mt-8 flex items-center justify-center text-sm w-full rounded-md px-6 py-3 bg-orange-400 hover:bg-orange-500  text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' className="mr-2"
                             viewBox="0 0 548.244 548.244">
                             <path fill-rule="evenodd"
@@ -464,7 +495,7 @@ export default function Home() {
                 </form>
 
                 <ul className="mt-4 flex flex-wrap justify-center gap-6">
-                    <li className="flex items-center text-blue-600">
+                    <li className="flex items-center text-black-600">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='currentColor'
                             viewBox="0 0 479.058 479.058">
                             <path
@@ -472,10 +503,10 @@ export default function Home() {
                                 data-original="#000000" />
                         </svg>
                         <a href="javascript:void(0)" className="text-sm ml-4">
-                            <strong>info@example.com</strong>
+                            <strong>ieeecssyp@gmail.com</strong>
                         </a>
                     </li>
-                    <li className="flex items-center text-blue-600">
+                    <li className="flex items-center text-black-600">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='currentColor'
                             viewBox="0 0 482.6 482.6">
                             <path
@@ -483,7 +514,7 @@ export default function Home() {
                                 data-original="#000000"></path>
                         </svg>
                         <a href="javascript:void(0)" className="text-sm ml-4">
-                            <strong>+158 996 888</strong>
+                            <strong>+91 9650411734</strong>
                         </a>
                     </li>
                 </ul>
@@ -733,7 +764,7 @@ export default function Home() {
           </a>
         </div>
 
-        <p className='text-gray-300 text-sm'>© ReadymadeUI. All rights reserved.
+        <p className='text-gray-300 text-sm'>© StarkSeek. All rights reserved.
         </p>
       </div>
     </footer>
