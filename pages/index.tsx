@@ -102,12 +102,30 @@ export default function Home() {
       <li>
         <details>
           <summary className="text-white">Membership</summary>
-          <ul className="p-2">
+          <ul className="p-2 w-56">
             <li><a href="https://www.computer.org/membership">Discover Membership</a></li>
             <li><a href="https://www.computer.org/membership/categories">Membership Conclusion</a></li>
             <li><a href="https://www.computer.org/membership/faq">Membership FAQ</a></li>
-            <li><a href="https://syp.computer.org/">Initiative</a></li>
             <li><a href="https://www.computer.org/publications/tech-news/events/syp-volunteers">Get Involved</a></li>
+          </ul>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary className="text-white">Initiative</summary>
+          <ul className="p-2">
+            <li><a href="https://syp.computer.org/">Initiative</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary className="text-white">Join Us</summary>
+          <ul className="p-2 w-52">
+          <li><a href="https://docs.google.com/forms/d/19yLmWAzQetJSfopXtZp-mcs1IpzqdLbKNuXtBELnyaY/viewform?edit_requested=true">Volunteer Form</a></li>
+            <li><a href="https://forms.gle/UWY9y7kwf8FijZZE7">Call for Sponsors Form</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdcHGceG_SWV8tiXlec0vc3BoFi07JvxFnH8cTJ5LAGB-qj2Q/viewform">Call for Host Form</a></li>
           </ul>
         </details>
       </li>

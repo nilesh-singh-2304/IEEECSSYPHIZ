@@ -11,6 +11,9 @@ export default {
   },
   theme: {
     extend: {
+      spacing: {
+        '128': '40rem',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
