@@ -7,7 +7,7 @@ export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
   const [emblaRef1] = useEmblaCarousel({ loop: true }, [Autoplay()])
   return (
-    <div className='w-screen'>
+    <div >
       <section>
       <header className='shadow-md font-sans tracking-wide relative z-50'>
     <section className='py-2 bg-orange-400 text-white text-right px-10 w-full'>
@@ -69,9 +69,8 @@ export default function Home() {
       <li><a href="https://www.computer.org/publications/tech-news/events/syp-volunteers">Get Involved</a></li>
       </ul>
     </div>
-    <a className="">
-      <img src="https://syp.computer.org/wp-content/uploads/2021/04/CS_SYP_Logo-white-300x58.png" height={250} width={250} alt="" />
-    </a>
+
+      <img src="https://syp.computer.org/wp-content/uploads/2021/04/CS_SYP_Logo-white-300x58.png"  alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
