@@ -2,6 +2,7 @@ import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { IoMenu } from "react-icons/io5";
+import Link from 'next/link';
 
 export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
@@ -30,7 +31,7 @@ export default function Home() {
             strokeWidth="2"
             d="M4 6h16M4 12h8m-8 6h16" />
         </svg> */}
-        <IoMenu className='text-white size-14'/>
+        <IoMenu className='text-white size-10 mr-10'/>
       </div>
       <ul
         tabIndex={0}
@@ -70,7 +71,7 @@ export default function Home() {
       </ul>
     </div>
 
-      <img src="https://syp.computer.org/wp-content/uploads/2021/04/CS_SYP_Logo-white-300x58.png"  alt="" />
+      <img className='' src="https://syp.computer.org/wp-content/uploads/2021/04/CS_SYP_Logo-white-300x58.png"  alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
