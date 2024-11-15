@@ -160,13 +160,13 @@ export default function Home() {
               <div className="flex flex-col gap-8">
                 <div>
                   <div className=" text-2xl font-semibold">
-                    Host : To be Announce soon
+                    Host : To be Announced soon
                   </div>
                   <div className=" text-2xl font-semibold">
-                    Venue : To be Announce soon
+                    Venue : To be Announced soon
                   </div>
                   <div className=" text-2xl font-semibold">
-                    Co-host : To be Announce soon
+                    Co-host : To be Announced soon
                   </div>
                 </div>
               </div>
