@@ -2,7 +2,6 @@ import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { IoMenu } from "react-icons/io5";
-import Link from 'next/link';
 
 export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({delay: 1000})])
