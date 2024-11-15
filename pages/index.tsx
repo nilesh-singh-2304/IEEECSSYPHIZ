@@ -5,8 +5,8 @@ import { IoMenu } from "react-icons/io5";
 import Link from 'next/link';
 
 export default function Home() {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
-  const [emblaRef1] = useEmblaCarousel({ loop: true }, [Autoplay()])
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({delay: 1000})])
+  const [emblaRef1] = useEmblaCarousel({ loop: true }, [Autoplay({delay: 1500})])
   return (
     <div >
       <section>
@@ -67,6 +67,18 @@ export default function Home() {
           </ul>
         </details>
       </li>
+      {/* Join Us Section */}
+      <li>
+        <details>
+          <summary className="text-black">Join Us</summary>
+          <ul className="p-2">
+            <li><a href="https://docs.google.com/forms/d/19yLmWAzQetJSfopXtZp-mcs1IpzqdLbKNuXtBELnyaY/viewform?edit_requested=true">Volunteer Form</a></li>
+            <li><a href="https://forms.gle/UWY9y7kwf8FijZZE7">Call for Sponsors Form</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdcHGceG_SWV8tiXlec0vc3BoFi07JvxFnH8cTJ5LAGB-qj2Q/viewform">Call for Host Form</a></li>
+          </ul>
+
+        </details>
+      </li>
       <li><a href="https://www.computer.org/publications/tech-news/events/syp-volunteers">Get Involved</a></li>
       </ul>
     </div>
@@ -90,12 +102,30 @@ export default function Home() {
       <li>
         <details>
           <summary className="text-white">Membership</summary>
-          <ul className="p-2">
+          <ul className="p-2 w-56">
             <li><a href="https://www.computer.org/membership">Discover Membership</a></li>
             <li><a href="https://www.computer.org/membership/categories">Membership Conclusion</a></li>
             <li><a href="https://www.computer.org/membership/faq">Membership FAQ</a></li>
-            <li><a href="https://syp.computer.org/">Initiative</a></li>
             <li><a href="https://www.computer.org/publications/tech-news/events/syp-volunteers">Get Involved</a></li>
+          </ul>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary className="text-white">Initiative</summary>
+          <ul className="p-2">
+            <li><a href="https://syp.computer.org/">Initiative</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary className="text-white">Join Us</summary>
+          <ul className="p-2 w-52">
+          <li><a href="https://docs.google.com/forms/d/19yLmWAzQetJSfopXtZp-mcs1IpzqdLbKNuXtBELnyaY/viewform?edit_requested=true">Volunteer Form</a></li>
+            <li><a href="https://forms.gle/UWY9y7kwf8FijZZE7">Call for Sponsors Form</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdcHGceG_SWV8tiXlec0vc3BoFi07JvxFnH8cTJ5LAGB-qj2Q/viewform">Call for Host Form</a></li>
           </ul>
         </details>
       </li>
@@ -110,15 +140,16 @@ export default function Home() {
 
       <section>
       <div className="font-[sans-serif] bg-gray-800">
-      <div className="h-screen flex justify-center items-center opacity-50 bg-[url('https://lh3.googleusercontent.com/pw/AP1GczPOGNtHMBAMLxo8XHyRfVa6AfJvBotz2nUGUUvsAaAlhb1cNwgOX2b5mZve4hcNjQ-QC9yyK8An6O8bzx7cwARu5O7V0-bNZLB9JXR_KZyRV6sjGh-pkyC62zlL4iFN_MZXpah_QC-b0BhyknHHzh2K5A=w1311-h984-s-no-gm?authuser=0')]">
+      <div className="h-screen flex justify-center items-center bg-cover bg-opacity-30 bg-[url('https://www.imgtr.net/ib/GduEvvtBidQ2bGL_1731610954.jpg')]">
             <div className="opacity-100">
               <img src="https://www.imgtr.net/ib/MtxLn09N9sdjBQQ_1731435414.png" alt="hiz.png" />
             </div>
+            
       </div>
     </div>
       </section>
 {/* About IEEE CS SYP */}
-      <section className='my-16'>
+      <section className='sm:my-16 mt-16 mb-8'>
       <div className="font-sans bg-white p-4">
       <div className="md:max-w-5xl max-w-xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
@@ -131,7 +162,7 @@ export default function Home() {
           </div>
           <div className="max-h-72">
             {/* <img src="https://readymadeui.com/management-img.webp" alt="Placeholder Image" className="rounded-lg object-contain w-full h-full" /> */}
-            <div className="embla" ref={emblaRef1}>
+            <div className="embla hidden sm:flex" ref={emblaRef1}>
                 <div className="embla__container">
                   <div className="embla__slide">
                     <img src="https://www.imgtr.net/ib/ZvBYVQ3wTm6fwcG_1731523565.jpg" alt="" />
