@@ -265,7 +265,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="font-[sans-serif] bg-gray-100">
           <div className="max-w-5xl max-lg:max-w-2xl mx-auto">
             <div className="max-w-2xl mx-auto text-center">
@@ -284,7 +284,7 @@ export default function Home() {
                     <p className="text-gray-600 text-sm leading-relaxed">Director, Engineering Architecture at Synopsys</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* <div className="border rounded-md overflow-hidden max-md:max-w-[300px]">
                         <img src="https://ieeecs-media.computer.org/wp-media/2021/01/12111656/Jyotika_headshot.jpg" className="w-full h-60 object-contain object-top bg-gray-200" />
@@ -363,16 +363,16 @@ export default function Home() {
                             </div>
                         </div>
                     </div> */}
-
+{/* 
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
 
-      <section>
+      {/* <section>
         <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
           <div className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
             <div className="mx-auto w-auto bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" ></div>
@@ -466,7 +466,7 @@ export default function Home() {
           </div>
         </div>
 
-      </section>
+      </section> */}
 
 
 
@@ -603,7 +603,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="font-sans my-5">
           <div className="lg:max-w-5xl max-w-3xl mx-auto">
             <div className="max-w-2xl mx-auto text-center">
@@ -758,7 +758,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section>
         <footer className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900  py-14 px-16 font-sans tracking-wide relative">
