@@ -2,12 +2,14 @@ import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { IoMenu } from "react-icons/io5";
-
+import EmblaCarousel from './emblaCarousel';
 
 export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 1000 })])
   const [emblaRef1] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 1500 })])
- 
+  const OPTIONS = { loop: true }
+  const SLIDE_COUNT = 8
+  const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
   return (
     <div >
       <section>
@@ -762,7 +764,9 @@ export default function Home() {
         </div>
       </section> */}
      
-
+     <section>
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      </section>
 
       <section>
         <footer className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900  py-14 px-16 font-sans tracking-wide relative">
