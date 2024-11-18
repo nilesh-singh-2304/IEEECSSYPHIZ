@@ -3,15 +3,17 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { IoMenu } from "react-icons/io5";
 
+
 export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 1000 })])
   const [emblaRef1] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 1500 })])
+ 
   return (
     <div >
       <section>
         <header className='shadow-md font-sans tracking-wide relative z-50'>
           <section className='py-2 bg-orange-400 text-white text-right px-10 w-full'>
-            <p className='text-center'><strong>IEEE CSSYP HIGH IMPACT ZONAL GRAND FINALE</strong></p>
+            <p className='text-center'><strong>IEEE CSS YP HIGH IMPACT ZONAL GRAND FINALE</strong></p>
           </section>
 
           <div className="navbar bg-gray-800">
@@ -93,7 +95,7 @@ export default function Home() {
                     <ul className="p-2">
                       <li><a href="http://ieee.org/about">IEEE</a></li>
                       <li><a href="https://www.computer.org/about"> IEEE Computer Society</a></li>
-                      <li><a href="https://www.computer.org/volunteering/boards-and-committees/member-geographic-activities">IEEE CS MGAP</a></li>
+                      <li><a href="https://www.computer.org/volunteering/boards-and-committees/member-geographic-activities">IEEE CS MGAB</a></li>
                       <li><a href="https://www.computer.org/volunteering/boards-and-committees/syp">IEEE CSS SYP</a></li>
                     </ul>
                   </details>
@@ -141,31 +143,31 @@ export default function Home() {
         <div className="font-[sans-serif] bg-gray-800">
           <div className="h-screen flex flex-col justify-center items-center bg-[url('https://lh3.googleusercontent.com/pw/AP1GczPOGNtHMBAMLxo8XHyRfVa6AfJvBotz2nUGUUvsAaAlhb1cNwgOX2b5mZve4hcNjQ-QC9yyK8An6O8bzx7cwARu5O7V0-bNZLB9JXR_KZyRV6sjGh-pkyC62zlL4iFN_MZXpah_QC-b0BhyknHHzh2K5A=w1311-h984-s-no-gm?authuser=0')] bg-cover bg-center">
             <div className="w-full h-full flex flex-col items-center justify-center  bg-black bg-opacity-60 text-white p-6 rounded-md shadow-lg">
-              <div className=" text-9xl font-bold mb-4  text-orange-400">
-                IEEE CS SYP
+              <div className=" text-5xl font-bold mb-4  text-orange-400 sm:text-9xl">
+                IEEE CSS YP
               </div>
-              <div className=" text-6xl font-bold mb-4">
+              <div className=" text-2xl font-bold mb-4 sm:text-5xl">
                 High Impact Zonal Event
               </div>
               <div className="flex mt-6 gap-4">
-                <span className=" text-7xl font-bold mb-4 text-orange-400">JANUARY</span>
+                <span className=" text-4xl font-bold mb-4 text-orange-400 sm:text-6xl">JANUARY</span>
                 <div>
-                  <span className=" text-3xl font-semibold">8th and 9th </span>
+                  <span className="text-2xl sm:text-3xl font-semibold">8th and 9th </span>
                   <br />
-                  <div className=" text-3xl font-semibold">
+                  <div className="text-2xl sm:text-3xl font-semibold">
                     2025
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-8 pt-5 px-2 py-4">
                 <div>
-                  <div className=" text-2xl font-semibold">
+                  <div className=" sm:text-2xl font-semibold text-xl">
                     Host : To be Announced soon
                   </div>
-                  <div className=" text-2xl font-semibold">
+                  <div className="sm:text-2xl font-semibold text-xl">
                     Venue : To be Announced soon
                   </div>
-                  <div className=" text-2xl font-semibold">
+                  <div className="sm:text-2xl font-semibold text-xl">
                     Co-host : To be Announced soon
                   </div>
                 </div>
@@ -759,24 +761,12 @@ export default function Home() {
           </div>
         </div>
       </section> */}
+     
+
 
       <section>
         <footer className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900  py-14 px-16 font-sans tracking-wide relative">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
-              <h2 className="text-white text-lg font-semibold mb-4">Quick Links</h2>
-              <ul className="space-y-4">
-                <li>
-                  <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm transition-all">Newsroom</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm transition-all">Tailwind CSS</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm transition-all">Careers</a>
-                </li>
-              </ul>
-            </div>
 
             <div>
               <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
@@ -793,20 +783,6 @@ export default function Home() {
               </ul>
             </div>
 
-            <div>
-              <h2 className="text-white text-lg font-semibold mb-4">Company</h2>
-              <ul className="space-y-4">
-                <li>
-                  <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm transition-all">About</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm transition-all">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm transition-all">Terms &amp; Conditions</a>
-                </li>
-              </ul>
-            </div>
 
             <div className="flex items-center lg:justify-center">
               <a href='javascript:void(0)'><img src="https://syp.computer.org/wp-content/uploads/2021/04/CS_SYP_Logo-white-300x58.png" alt="logo" className='w-60' /></a>
