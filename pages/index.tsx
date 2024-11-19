@@ -776,13 +776,13 @@ export default function Home() {
               <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
               <ul className="space-y-4">
                 <li>
-                  <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm transition-all">Github</a>
+                  <a href="https://www.instagram.com/ieeecssyphiz?igsh=djhsN2E0NTk5a3h2" className="text-gray-300 hover:text-white text-sm transition-all">Instagram</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm transition-all">linkedin</a>
+                  <a href="https://www.facebook.com/share/p/1A5DY5dmB4/" className="text-gray-300 hover:text-white text-sm transition-all">Facebook</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm transition-all">Twitter</a>
+                  <a href="https://www.linkedin.com/company/ieee-cssyp-high-impact-zonals-team/" className="text-gray-300 hover:text-white text-sm transition-all">Linkedin</a>
                 </li>
               </ul>
             </div>
