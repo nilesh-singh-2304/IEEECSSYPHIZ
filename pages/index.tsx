@@ -4,6 +4,8 @@ import Autoplay from 'embla-carousel-autoplay'
 import { IoMenu } from "react-icons/io5";
 import EmblaCarousel from './emblaCarousel';
 
+
+
 export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 1000 })])
   const [emblaRef1] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 1500 })])
@@ -15,7 +17,7 @@ export default function Home() {
       <section>
         <header className='shadow-md font-sans tracking-wide relative z-50'>
           <section className='py-2 bg-orange-400 text-white text-right px-10 w-full'>
-            <p className='text-center'><strong>IEEE CSS YP HIGH IMPACT ZONAL GRAND FINALE</strong></p>
+            <p className='text-center'><strong>IEEE CS SYP HIGH IMPACT ZONAL GRAND FINALE</strong></p>
           </section>
 
           <div className="navbar bg-gray-800">
@@ -47,7 +49,7 @@ export default function Home() {
                         <li><a href="http://ieee.org/about">IEEE</a></li>
                         <li><a href="https://www.computer.org/about"> IEEE Computer Society</a></li>
                         <li><a href="https://www.computer.org/volunteering/boards-and-committees/member-geographic-activities">IEEE CS MGAP</a></li>
-                        <li><a href="https://www.computer.org/volunteering/boards-and-committees/syp">IEEE CSS SYP</a></li>
+                        <li><a href="https://www.computer.org/volunteering/boards-and-committees/syp">IEEE CS SYP</a></li>
                       </ul>
                     </details>
                   </li>
@@ -145,8 +147,8 @@ export default function Home() {
         <div className="font-[sans-serif] bg-gray-800">
           <div className="h-screen flex flex-col justify-center items-center bg-[url('https://lh3.googleusercontent.com/pw/AP1GczPOGNtHMBAMLxo8XHyRfVa6AfJvBotz2nUGUUvsAaAlhb1cNwgOX2b5mZve4hcNjQ-QC9yyK8An6O8bzx7cwARu5O7V0-bNZLB9JXR_KZyRV6sjGh-pkyC62zlL4iFN_MZXpah_QC-b0BhyknHHzh2K5A=w1311-h984-s-no-gm?authuser=0')] bg-cover bg-center">
             <div className="w-full h-full flex flex-col items-center justify-center  bg-black bg-opacity-60 text-white p-6 rounded-md shadow-lg">
-              <div className=" text-5xl font-bold mb-4  text-orange-400 sm:text-9xl">
-                IEEE CSS YP
+              <div className=" text-5xl font-bold mb-4  text-orange-400 sm:text-9xl font-montserrat">
+                IEEE CS SYP
               </div>
               <div className=" text-2xl font-bold mb-4 sm:text-5xl">
                 High Impact Zonal Event
@@ -169,9 +171,6 @@ export default function Home() {
                   <div className="sm:text-2xl font-semibold text-xl">
                     Venue : To be Announced soon
                   </div>
-                  <div className="sm:text-2xl font-semibold text-xl">
-                    Co-host : To be Announced soon
-                  </div>
                 </div>
               </div>
             </div>
@@ -186,7 +185,7 @@ export default function Home() {
               <div className="text-left">
                 <h2 className="text-gray-800 text-2xl font-bold mb-4">About IEEE CS SYP</h2>
                 <p className="text-black">
-                  The IEEE Computer Society Student and Young Professionals (CSSYP) is dedicated to nurturing future innovators in the field of technology. With a global network of students, researchers, and professionals, IEEE CS SYP empowers young minds by providing mentorship, resources, and platforms like HIZ for skill-building and career growth. Our mission is to inspire, educate, and connect future technology leaders by promoting responsible innovation and collaboration across diverse fields such as AI, cybersecurity, IoT, and more.
+                  The IEEE Computer Society Student and Young Professionals (CS SYP) is dedicated to nurturing future innovators in the field of technology. With a global network of students, researchers, and professionals, IEEE CS SYP empowers young minds by providing mentorship, resources, and platforms like HIZ for skill-building and career growth. Our mission is to inspire, educate, and connect future technology leaders by promoting responsible innovation and collaboration across diverse fields such as AI, cybersecurity, IoT, and more.
                 </p>
                 <button type="button" className="mt-6 px-5 py-2.5 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-orange-400 hover:bg-orange-500 active:bg-orange-450">Get started</button>
               </div>
@@ -261,7 +260,7 @@ export default function Home() {
             <div className="text-left">
               <h2 className="text-gray-800 text-3xl font-bold mb-6">About HIZ Events</h2>
               <p className="text-black">
-                The IEEE CSSYP High Impact Zonals (HIZ) Grand Finale is a premier event bringing together students, professionals, and industry experts for two impactful days of knowledge sharing, innovation, and networking. Hosted on January 8-9, 2025, the event celebrates the achievements of regional HIZ events held across the country, with an immersive program including conferences, workshops, hackathons, and cultural experiences. Attendees can expect exclusive insights from thought leaders in technology, unique networking opportunities, and a chance to showcase their ideas on a global stage. Join us to be part of a transformative experience that shapes the future of technology!
+                The IEEE CS SYP High Impact Zonals (HIZ) Grand Finale is a premier event bringing together students, professionals, and industry experts for two impactful days of knowledge sharing, innovation, and networking. Hosted on January 8-9, 2025, the event celebrates the achievements of regional HIZ events held across the country, with an immersive program including conferences, workshops, hackathons, and cultural experiences. Attendees can expect exclusive insights from thought leaders in technology, unique networking opportunities, and a chance to showcase their ideas on a global stage. Join us to be part of a transformative experience that shapes the future of technology!
               </p>
             </div>
 
