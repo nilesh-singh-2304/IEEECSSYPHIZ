@@ -147,7 +147,7 @@ export default function Home() {
         <div className="font-[sans-serif] bg-gray-800">
           <div className="h-screen flex flex-col justify-center items-center bg-[url('https://lh3.googleusercontent.com/pw/AP1GczPOGNtHMBAMLxo8XHyRfVa6AfJvBotz2nUGUUvsAaAlhb1cNwgOX2b5mZve4hcNjQ-QC9yyK8An6O8bzx7cwARu5O7V0-bNZLB9JXR_KZyRV6sjGh-pkyC62zlL4iFN_MZXpah_QC-b0BhyknHHzh2K5A=w1311-h984-s-no-gm?authuser=0')] bg-cover bg-center">
             <div className="w-full h-full flex flex-col items-center justify-center  bg-black bg-opacity-60 text-white p-6 rounded-md shadow-lg">
-              <div className=" text-5xl font-bold mb-4  text-orange-400 sm:text-9xl font-montserrat">
+              <div className=" text-5xl font-bold mb-4  text-orange-400 sm:text-9xl">
                 IEEE CS SYP
               </div>
               <div className=" text-2xl font-bold mb-4 sm:text-5xl">
@@ -268,7 +268,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="font-[sans-serif] bg-gray-100">
           <div className="max-w-5xl max-lg:max-w-2xl mx-auto">
             <div className="max-w-2xl mx-auto text-center">
@@ -370,7 +370,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
@@ -606,7 +606,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="font-sans my-5">
           <div className="lg:max-w-5xl max-w-3xl mx-auto">
             <div className="max-w-2xl mx-auto text-center">
@@ -761,7 +761,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
      
      <section>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
