@@ -211,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* Let this be like this */}
-      {/* <section>
+      <section>
       <section className="bg-white dark:bg-gray-900">
     <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
         <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
@@ -237,7 +237,7 @@ export default function Home() {
         </div>
     </div>
 </section>
-      </section> */}
+      </section>
       {/* About HIZ Events */}
       <section className='my-14'>
         <div className="font-sans bg-gray-100 px-4 py-12">
@@ -268,7 +268,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section>
+      <section>
         <div className="font-[sans-serif] bg-gray-100">
           <div className="max-w-5xl max-lg:max-w-2xl mx-auto">
             <div className="max-w-2xl mx-auto text-center">
@@ -287,9 +287,9 @@ export default function Home() {
                     <p className="text-gray-600 text-sm leading-relaxed">Director, Engineering Architecture at Synopsys</p>
                   </div>
                 </div>
-              </div> */}
+              </div>
 
-              {/* <div className="border rounded-md overflow-hidden max-md:max-w-[300px]">
+              <div className="border rounded-md overflow-hidden max-md:max-w-[300px]">
                         <img src="https://ieeecs-media.computer.org/wp-media/2021/01/12111656/Jyotika_headshot.jpg" className="w-full h-60 object-contain object-top bg-gray-200" />
 
                         <div className="p-4">
@@ -365,12 +365,12 @@ export default function Home() {
                                 <p className="text-gray-600 text-sm leading-relaxed">Director, Engineering Architecture at Synopsys</p>
                             </div>
                         </div>
-                    </div> */}
-{/* 
+                    </div>
+
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
 
 
@@ -606,7 +606,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section>
+      <section>
         <div className="font-sans my-5">
           <div className="lg:max-w-5xl max-w-3xl mx-auto">
             <div className="max-w-2xl mx-auto text-center">
@@ -761,7 +761,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
      
      <section>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
